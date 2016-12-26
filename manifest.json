@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Autopause",
+  "version": "1.0",
+
+  "description": "Pauses YT video when the window losses focus",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["autopause.js"]
+    }
+  ]
+}
